@@ -1,0 +1,27 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "This is react-boilerplate for my projects",
+  "main": "index.js",
+  "repository": "git+https://github.com/theyeshu/react-boilerplate.git",
+  "author": "Yeshu Kochher",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node ./server/index.js",
+    "server": "nodemon ./server/index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "nodemon": "^1.17.1"
+  }
+}
