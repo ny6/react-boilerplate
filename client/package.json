@@ -9,7 +9,8 @@
   "private": false,
   "scripts": {
     "build": "webpack --mode production",
-    "build:dev": "webpack --mode development"
+    "build:dev": "webpack --mode development",
+    "dev": "webpack-dev-server --mode development"
   },
   "dependencies": {
     "react": "^16.2.0",
@@ -22,6 +23,7 @@
     "babel-preset-react": "^6.24.1",
     "uglifyjs-webpack-plugin": "^1.2.2",
     "webpack": "^4.0.1",
-    "webpack-cli": "^2.0.9"
+    "webpack-cli": "^2.0.9",
+    "webpack-dev-server": "^3.1.0"
   }
 }

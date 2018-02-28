@@ -1,6 +1,6 @@
 {
   "name": "react-boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This is react-boilerplate for my projects",
   "main": "index.js",
   "repository": "git+https://github.com/theyeshu/react-boilerplate.git",
@@ -8,8 +8,11 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node ./server/index.js",
-    "server": "nodemon ./server/index.js"
+    "build": "npm run build --prefix client",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "server": "nodemon ./server/index.js",
+    "start": "node ./server/index.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -17,6 +20,7 @@
     "express": "^4.16.2"
   },
   "devDependencies": {
+    "concurrently": "^3.5.1",
     "eslint": "^4.18.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.9.0",
